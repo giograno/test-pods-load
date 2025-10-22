@@ -30,3 +30,6 @@ jobs:
           skip-startup: 'true'
         env:
           LOCALSTACK_AUTH_TOKEN: ${{ secrets.LOCALSTACK_AUTH_TOKEN }}
+      - name: Verify S3 state loaded
+        run: |
+          awslocal s3 ls
