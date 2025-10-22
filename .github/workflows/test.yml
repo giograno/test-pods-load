@@ -10,6 +10,7 @@ on:
   workflow_dispatch:
 jobs:
   test-pods-load:  
+    runs-on: ubuntu-latest
     steps:
       - name: Start LocalStack
         uses: LocalStack/setup-localstack@v0.2.3
