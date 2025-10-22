@@ -28,3 +28,5 @@ jobs:
           state-name: pod-test-gio-3
           state-action: load
           skip-startup: 'true'
+        env:
+          LOCALSTACK_AUTH_TOKEN: ${{ secrets.LOCALSTACK_AUTH_TOKEN }}
